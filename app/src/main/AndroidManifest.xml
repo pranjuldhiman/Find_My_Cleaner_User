@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pranjul.findmycleaneruser">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FindMyCleanerUser">
+        <activity android:name=".ProviderApp.AddCompanyActivity"></activity>
+        <activity
+            android:name=".ProviderNavigationActivity"
+            android:label="@string/title_activity_provider_navigation"
+            android:theme="@style/Theme.FindMyCleanerUser.NoActionBar"></activity>
+        <activity
+            android:name=".ProviderApp.ProviderNavigationActivity"
+            android:label="@string/title_activity_provider_navigation"
+            android:theme="@style/Theme.FindMyCleanerUser.NoActionBar"></activity>
+        <activity
+            android:name=".ProviderApp.ProviderNavigation"
+            android:label="@string/title_activity_provider_navigation"
+            android:theme="@style/Theme.FindMyCleanerUser.NoActionBar"></activity>
+        <activity android:name=".Activities.Packages.BespokePackageActivity" />
+        <activity android:name=".Activities.Packages.FeaturedPackageActivity" />
+        <activity android:name=".Activities.Packages.StandardPackageActivity" />
+        <activity android:name=".Activities.Packages.PackagesActivity" />
+        <activity android:name=".Activities.SubCategoryActivity" />
+        <activity
+            android:name=".Activities.Navigation.ProviderNavigation"
+            android:label="@string/title_activity_main_navigation"
+            android:theme="@style/Theme.FindMyCleanerUser.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Activities.HomeActivity" />
+        <activity android:name=".Activities.ProviderDashboardActivity" />
+        <activity android:name=".Activities.ProviderSignupActivity" />
+        <activity
+            android:name=".Activities.ProviderAreaActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
